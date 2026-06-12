@@ -46,7 +46,7 @@ export const Hero: React.FC = () => {
             muted
             playsInline
             referrerPolicy="no-referrer"
-            className="w-full h-auto mb-6 rounded-lg"
+            className="w-1/2 mx-auto h-auto mb-6 rounded-lg"
           />
         
         {/* Course Title Plate */}

@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { motion } from "motion/react";
 import { Star, Calendar, Clock, MapPin, Home, UserCheck, Flame, Cpu } from 'lucide-react';
 import { useContent } from '../contexts/ContentContext';
 
@@ -50,6 +51,20 @@ export const Hero: React.FC = () => {
             <source src="https://mblogvideo-phinf.pstatic.net/MjAyNjA2MTJfMTMx/MDAxNzgxMjUxMzMzNDcz.zs3SAo4V_XW5m-_jT6tKL0AtG16Eb2U-9cUn8zFsk1Yg.lf8LazLrWhT0UJoSm5DXKTMQqpirhXt9xjd7txyS-EEg.GIF/rotem_ai_pc0_gif_(1)_(2)_(1).gif?type=mp4w800" type="video/mp4" />
           </video>
         
+        {/* Banner */}
+        <div className="w-full flex justify-center mb-6">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9, y: 10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="inline-flex items-center px-6 py-3 rounded-full bg-red-900/10 border border-red-500/20 shadow-[0_0_20px_rgba(185,28,28,0.1)]"
+          >
+            <span className="text-white text-sm md:text-md font-medium text-center">
+              본 과정은 현대로템이 주관하는 K-디지털 트레이닝 디지털 선도기업 아카데미입니다.
+            </span>
+          </motion.div>
+        </div>
+
         {/* Course Title Plate */}
         <div className="max-w-4xl mx-auto mb-12 animate-fade-in-up delay-300">
           <div className="relative p-6 md:p-8 rounded-2xl bg-zinc-900/60 backdrop-blur-xl border border-white/10 overflow-hidden group">

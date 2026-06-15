@@ -14,12 +14,11 @@ export const Footer: React.FC = () => {
                 <h5 className="text-white font-bold mb-4 text-base">kt cloud TECH UP</h5>
                 <div className="mb-4">
                     <p className="leading-relaxed mb-2">
-                        본 과정은 현대로템이 주관하는 K-디지털 트레이닝 디지털 선보기업 아카데미입니다.
+                        본 과정은 현대로템이 주관하는 K-디지털 트레이닝 디지털 선도기업 아카데미입니다.
                     </p>
                     <p className="leading-relaxed mb-2">
                         고용노동부 / 현대로템 / 한국전파진흥원 / 한국국방기술학회 / 에이콘아카데미(강남)
                     </p>
-                    <p className="text-zinc-600">Copyright ⓒ kt cloud TECH UP All rights reserved.</p>
                 </div>
             </div>
             <div className="md:text-right">

@@ -128,7 +128,7 @@ export const HanjikgyoBenefits: React.FC = () => {
                 transition={{ delay: 0.5, duration: 0.5 }}
                 className="text-white mt-6 text-sm md:text-base bg-gradient-to-r from-red-900/40 to-zinc-900 border border-red-500/50 py-3 px-6 rounded-xl font-medium inline-block shadow-lg"
             >
-                모든 수료생 한국국방기술학회 이사장 명의 채용 추천서 제공
+                모든 수료생 한국국방기술학회 이사장 명의 <br /> 채용 추천서 제공
             </motion.p>
           </Reveal>
         </div>

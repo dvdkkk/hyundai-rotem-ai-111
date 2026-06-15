@@ -26,7 +26,8 @@ export function CurriculumRoadmap() {
         >
           <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
             <span className="text-red-500">'인공지능 개발'</span>을 위한 <br />
-            현업 전문가들이 만든 커리큘럼의 정점
+            현업 전문가들이 만든 <br />
+            커리큘럼의 정점
           </h2>
           <motion.p 
             initial={{ opacity: 0, scale: 0.95 }}
@@ -34,7 +35,7 @@ export function CurriculumRoadmap() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="text-white mt-6 text-sm md:text-lg bg-gradient-to-r from-red-900/40 to-black border border-red-500/30 py-3 px-8 rounded-full font-medium inline-block shadow-lg"
           >
-            체계적인 로드맵으로 실무형 AI 전문가로 성장하세요
+            체계적인 로드맵으로 <br /> 실무형 AI 전문가로 성장하세요
           </motion.p>
         </motion.div>
 

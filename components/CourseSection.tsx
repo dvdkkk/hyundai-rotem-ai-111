@@ -93,7 +93,7 @@ export const CourseSection: React.FC = () => {
         <Reveal>
             <div className="bg-zinc-900/30 border border-zinc-800 p-10 rounded-3xl backdrop-blur-sm">
                 <div className="text-center mb-12">
-                  <h3 className="text-3xl font-bold text-white mb-4">현대로템 산업체 프로젝트</h3>
+                  <h3 className="text-3xl font-bold text-white mb-4">현대로템 <br /> 산업체 프로젝트</h3>
                   <p className="text-white mt-6 mb-6 text-sm md:text-lg bg-gradient-to-r from-red-900/40 to-black border border-red-500/20 py-3 px-8 rounded-full font-medium inline-block shadow-lg">
                     수강생들이 직접만든 최종프로젝트
                   </p>

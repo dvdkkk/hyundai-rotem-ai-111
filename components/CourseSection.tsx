@@ -68,7 +68,7 @@ export const CourseSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <Reveal>
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-black mb-4">
+              <h2 className="text-3xl md:text-5xl font-black mb-4 leading-tight">
                 단계별 학습 설계로<br />
                 <span className="text-red-500">탄탄하게 쌓는 커리큘럼</span>
               </h2>
@@ -92,18 +92,64 @@ export const CourseSection: React.FC = () => {
 
         <Reveal>
             <div className="bg-zinc-900/30 border border-zinc-800 p-10 rounded-3xl backdrop-blur-sm">
-                <h3 className="text-2xl font-bold mb-10 text-center text-white">프로젝트 과정</h3>
-                <div className="grid md:grid-cols-3 gap-8">
-                    {PROJECTS_DATA.map((p, i) => (
-                        <div key={i} className="bg-zinc-950 p-8 rounded-2xl border border-zinc-800 hover:border-zinc-700 transition-colors">
-                            <h4 className="text-lg font-bold mb-6 text-red-500">{p.title}</h4>
-                            <ul className="space-y-3 text-zinc-300 text-sm">
-                                {p.subjects.map((sub, j) => <li key={j} className="flex items-start gap-2"><Cpu size={16} className="text-zinc-600 mt-0.5 flex-shrink-0" /> {sub}</li>)}
-                            </ul>
-                        </div>
-                    ))}
+                <div className="text-center mb-12">
+                  <h3 className="text-3xl font-bold text-white mb-4">현대로템 산업체 프로젝트</h3>
+                  <p className="text-white mt-6 mb-6 text-sm md:text-lg bg-gradient-to-r from-red-900/40 to-black border border-red-500/20 py-3 px-8 rounded-full font-medium inline-block shadow-lg">
+                    수강생들이 직접만든 최종프로젝트
+                  </p>
+                  <img 
+                    src="https://postfiles.pstatic.net/MjAyNjA2MTVfMjgz/MDAxNzgxNTAxMjYxMTg3.8NEIBDph6QLrA_sYWRdvapg5qXvrjmNbp-_FgMC_JOIg.O-0jMK1KtZUm4kb3ZWXQHoWRGABg5f14k0aZxPHU5uAg.JPEG/20260615_142533.jpg?type=w966"
+                    alt="현대로템 관련 이미지 1"
+                    referrerPolicy="no-referrer"
+                    className="w-full max-w-[966px] mx-auto mb-8 rounded-2xl shadow-xl"
+                  />
+                  <video 
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full max-w-[966px] mx-auto mb-8 rounded-2xl shadow-xl"
+                  >
+                    <source src="https://mblogvideo-phinf.pstatic.net/MjAyNjA2MTVfNDIg/MDAxNzgxNTAxMjYzMTI4.PDipSHQ2Iw78j04mbf2RkPSAYymsgeU8V5s0vcGAwQwg.Ibx9VDqTbwCJ9nJNCLmRM9VEOHsAY4_HOAxqEWOzoAMg.GIF/rotem_ai_m3-1_(1).gif?type=mp4w800" type="video/mp4" />
+                  </video>
+                  <p className="text-white mt-6 text-sm md:text-lg bg-gradient-to-r from-red-900/40 to-black border border-red-500/20 py-3 px-8 rounded-full font-medium inline-block shadow-lg">
+                    [현대로템] 실무자가 선정한 4가지 주제의 [현대로템] 현업 프로젝트!
+                  </p>
                 </div>
-                <p className="text-zinc-500 text-xs mt-10 text-center">※ 토이프로젝트는 강의 시간중 오후 시간을 할애하여 2~3일 만에 완성함.</p>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-12">
+                   {[
+                     "시뮬레이터를 활용한 전차주변 전장상황 인식 학습 모델 구현 프로젝트",
+                     "시뮬레이터를 활용한 전차이동 경로 학습 모델 구현 프로젝트",
+                     "시뮬레이터를 활용한 전장 전차 자율주행 학습 모델 구현 프로젝트",
+                     "시뮬레이터를 활용한 전차 자율주행 학습 모델 구현 프로젝트"
+                   ].map((project, idx) => (
+                      <div key={idx} className="bg-zinc-950 p-6 rounded-2xl border border-zinc-800 flex items-start gap-4">
+                        <div className="w-8 h-8 rounded-full bg-red-500/20 text-red-500 flex items-center justify-center flex-shrink-0 font-bold shrink-0">
+                          {idx + 1}
+                        </div>
+                        <p className="text-zinc-200 text-sm">{project}</p>
+                      </div>
+                   ))}
+                </div>
+
+                <div className="bg-black/40 border border-zinc-800 p-8 rounded-2xl mt-12">
+                    <h4 className="text-xl font-bold text-white mb-8 text-center">프로젝트 멘토링</h4>
+                    <div className="space-y-6 max-w-3xl mx-auto">
+                      <div className="flex items-start gap-4 text-zinc-300 text-sm leading-relaxed">
+                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 text-red-500 flex items-center justify-center font-bold">01</span>
+                          <p>현대로템의 현업기업멘토들이 실제 국방 관련 기술의 프로젝트 주제를 선정함으로써 훈련생들이 프로젝트 진행을 통하여 빅데이터분석 관련 국방기술을 다루는 실무기업에 바로 취업할 수 있는 역량을 양성</p>
+                      </div>
+                      <div className="flex items-start gap-4 text-zinc-300 text-sm leading-relaxed">
+                          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 text-red-500 flex items-center justify-center font-bold">02</span>
+                          <p>프로젝트 작업 수행, 중간 점검, 최종 결과물 산출 및 포트폴리오 작성</p>
+                      </div>
+                    </div>
+                </div>
+
+                <div className="mt-12 text-center bg-red-900/10 border border-red-500/20 p-6 rounded-2xl">
+                    <p className="text-red-300 font-medium">현대로템 멘토와 함께, 기획부터 최종 보완까지! 기업이 원하는 실무 중심 프로젝트를 완벽히 완성하세요.</p>
+                </div>
             </div>
         </Reveal>
         

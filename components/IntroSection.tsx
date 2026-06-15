@@ -48,7 +48,7 @@ export const IntroSection: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           
           {/* Main Headline */}
-          <h2 className={`text-xl md:text-3xl lg:text-5xl font-black text-white leading-[1.3] md:leading-[1.1] mb-10 tracking-tight break-keep ${getStyle("delay-100").className}`}>
+          <h2 className={`text-xl md:text-3xl lg:text-5xl font-black text-white leading-[1.5] md:leading-[1.3] mb-10 tracking-tight break-keep ${getStyle("delay-100").className}`}>
             {intro.title1}<br />
             <span className="relative inline-block px-2">
                 <span className="absolute inset-0 bg-red-700 rounded-lg transform translate-y-1"></span>
@@ -71,12 +71,32 @@ export const IntroSection: React.FC = () => {
             </div>
           </div>
 
+
           {/* Image Carousel */}
           {intro.images && intro.images.length > 0 && (
             <div className={`mb-16 ${getStyle("delay-300").className}`}>
               <ImageCarousel images={intro.images} />
             </div>
           )}
+
+          {/* Recommended For Section */}
+          <div className={`mt-16 text-left ${getStyle("delay-400").className}`}>
+            <h3 className="text-2xl font-bold text-white mb-8 text-center">이런분들에게 추천해요!</h3>
+            <div className="grid gap-4 max-w-2xl mx-auto">
+              {[
+                "비전공자지만 AI분야 기획, 영업, 마케팅 분야 등 관심있는 분!",
+                "IT관련 학과 전공했으나 실무능력 향상하고 싶은 분!",
+                "AI프로젝트 경험을 통해 다양한 산업의 AI관련 직무 취업을 준비하시는 분!",
+                "현대로템 등 대기업 또는 방산기업 등의 실무 직장 생활이나 직무가 궁금하신 분!",
+                "실제 직무수행 또는 취업 시 도움이 되는 인공지능 기술을 내 커리어에 추가하고 싶은 분!"
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-4 bg-zinc-900/50 p-5 rounded-xl border border-zinc-800 hover:border-red-500/50 transition-colors">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-red-500/20 text-red-500 flex items-center justify-center font-bold text-xs">✓</span>
+                  <p className="text-zinc-300">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
 
         </div>
       </div>

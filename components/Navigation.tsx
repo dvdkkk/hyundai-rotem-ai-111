@@ -39,9 +39,7 @@ export const Navigation: React.FC = () => {
   const navLinks = [
     { name: '과정소개 및 비전', href: '#course-title' },
     { name: '교육혜택', href: '#benefits' },
-    { name: '커리큘럼', href: '#courses' },
-    { name: '커리어지원', href: '#employment-support' },
-    { name: '수강후기', href: '#reviews' },
+    { name: '커리큘럼', href: '#curriculum-roadmap' },
     { name: '상담신청', href: '#consultation' },
   ];
 
@@ -62,7 +60,7 @@ export const Navigation: React.FC = () => {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+        <div className="hidden lg:flex items-center justify-center flex-1 space-x-6 xl:space-x-8">
           {navLinks.map((link) => (
             <a 
               key={link.name} 

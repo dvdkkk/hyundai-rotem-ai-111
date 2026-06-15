@@ -3,18 +3,18 @@ import React, { useEffect, useState } from 'react';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { IntroSection } from './components/IntroSection';
+import { CareerSection } from './components/CareerSection';
+import { CurriculumRoadmap } from './components/CurriculumRoadmap';
 import { CourseSection } from './components/CourseSection';
-import { ReviewSection } from './components/ReviewSection';
+import { TraineeCareSection } from './components/TraineeCareSection';
 import { ConsultationForm } from './components/ConsultationForm';
 import { Footer } from './components/Footer';
 import { FloatingCTA } from './components/FloatingCTA';
 import { CursorFollower } from './components/CursorFollower';
-import { EmploymentSupport } from './components/EmploymentSupport';
 import { HanjikgyoBenefits } from './components/HanjikgyoBenefits';
 import { ContentProvider, useContent } from './contexts/ContentContext';
 import { AdminDashboard } from './components/AdminDashboard';
 import { AdminLogin } from './components/AdminLogin';
-import { InstructorSection } from './components/InstructorSection';
 
 function VisitorTracker() {
   const { addVisitorLog } = useContent();
@@ -122,10 +122,10 @@ function AppContent() {
         <Hero />
         <IntroSection />
         <HanjikgyoBenefits />
+        <CareerSection />
+        <CurriculumRoadmap />
         <CourseSection />
-        <InstructorSection />
-        <EmploymentSupport />
-        <ReviewSection />
+        <TraineeCareSection />
         <ConsultationForm />
       </main>
       <FloatingCTA />

@@ -123,7 +123,7 @@ export const ConsultationForm: React.FC = () => {
                       </div>
                       <div>
                           <p className="text-xs font-bold opacity-70">교육방식</p>
-                          <p className="text-lg font-bold">100%온라인</p>
+                          <p className="text-lg font-bold">100%오프라인(강남)</p>
                       </div>
                   </div>
               </div>
@@ -157,7 +157,7 @@ export const ConsultationForm: React.FC = () => {
                   
                   <div className="space-y-0.5 md:space-y-1">
                       <label className="text-xs font-bold text-gray-700 ml-1">과정명</label>
-                      <input readOnly name="course_name" value="KT Cloud 클라우드 엔지니어링(인프라)" className="w-full px-3 py-2 md:py-2.5 rounded-lg border border-gray-200 bg-gray-50 text-sm font-bold" />
+                      <input readOnly name="course_name" value="현대로템 K-방산 SMART AI모델 개발과정" className="w-full px-3 py-2 md:py-2.5 rounded-lg border border-gray-200 bg-gray-50 text-sm font-bold" />
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-2 md:gap-3">
@@ -208,7 +208,7 @@ export const ConsultationForm: React.FC = () => {
                       {isPrivacyOpen && (
                           <div className="bg-gray-50 p-2.5 rounded-lg text-[10px] text-black animate-fade-in-down border border-gray-200 mb-2">
                               <h5 className="font-bold mb-1.5">개인정보 수집 및 이용 동의 (필수)</h5>
-                              <p className="mb-2 leading-tight">kt cloud TECH UP 실시간온라인문의 신청을 위해 다음과 같이 개인정보를 수집 및 이용합니다.</p>
+                              <p className="mb-2 leading-tight">현대로템 부트캠프에서는, K-디지털 트레이닝 교육과정 운영 등을 위해 여러분의 개인정보를 아래와 같이 수집ㆍ이용하고 있습니다.</p>
                               
                               <div className="grid grid-cols-[60px_1fr] gap-y-1.5 gap-x-2 border-t border-gray-200 pt-2 text-left">
                                   <div className="font-bold text-gray-600 bg-gray-100 rounded px-1 py-0.5 text-center">수집목적</div>

@@ -6,6 +6,7 @@ import { IntroSection } from './components/IntroSection';
 import { CareerSection } from './components/CareerSection';
 import { CurriculumRoadmap } from './components/CurriculumRoadmap';
 import { CourseSection } from './components/CourseSection';
+import { EmploymentProcessSection } from './components/EmploymentProcessSection';
 import { TraineeCareSection } from './components/TraineeCareSection';
 import { ConsultationForm } from './components/ConsultationForm';
 import { Footer } from './components/Footer';
@@ -114,7 +115,7 @@ function AppContent() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-red-700 selection:text-white">
+    <div className="min-h-screen bg-slate-950 text-white selection:bg-red-700 selection:text-white">
       <VisitorTracker />
       <CursorFollower />
       <Navigation />
@@ -125,6 +126,7 @@ function AppContent() {
         <CareerSection />
         <CurriculumRoadmap />
         <CourseSection />
+        <EmploymentProcessSection />
         <TraineeCareSection />
         <ConsultationForm />
       </main>

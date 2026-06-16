@@ -24,7 +24,7 @@ export function TraineeCareSection() {
             className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
-            <span className="text-red-500">현대로템 인공 지능 개발을 <br />
+            <span className="text-white">현대로템 K-방산 인공 지능 개발을 <br />
             위한 아카데미 훈련생 <br />
             집중케어!</span>
           </h2>

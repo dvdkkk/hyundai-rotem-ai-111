@@ -40,6 +40,7 @@ export const Navigation: React.FC = () => {
     { name: '과정소개 및 비전', href: '#course-title' },
     { name: '교육혜택', href: '#benefits' },
     { name: '커리큘럼', href: '#curriculum-roadmap' },
+    { name: '취업지원', href: '#employment-support' },
     { name: '상담신청', href: '#consultation' },
   ];
 

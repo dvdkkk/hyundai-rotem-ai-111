@@ -17,7 +17,7 @@ const STEPS = [
 
 export function CurriculumRoadmap() {
   return (
-    <section id="curriculum-roadmap" className="py-24 bg-black border-y border-zinc-900">
+    <section id="curriculum-roadmap" className="py-24 bg-slate-950 border-y border-zinc-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ export function CurriculumRoadmap() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
-            <span className="text-red-500">'인공지능 개발'</span>을 위한 <br />
+            <span className="text-red-500">'K-방산 인공지능 개발'</span>을 위한 <br />
             현업 전문가들이 만든 <br />
             커리큘럼의 정점
           </h2>

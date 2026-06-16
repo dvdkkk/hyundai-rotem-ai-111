@@ -123,9 +123,13 @@ export const HanjikgyoBenefits: React.FC = () => {
               <span className="text-red-600">성장을 이끄는 혜택</span>까지
             </h2>
             <motion.p 
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
+                initial={{ opacity: 0, scale: 0.95, y: 0 }}
+                animate={{ opacity: 1, scale: 1, y: [0, -10, 0] }}
+                transition={{
+                  opacity: { delay: 0.5, duration: 0.5 },
+                  scale: { delay: 0.5, duration: 0.5 },
+                  y: { repeat: Infinity, duration: 2, ease: "easeInOut", delay: 1 }
+                }}
                 className="text-white mt-6 text-sm md:text-base bg-gradient-to-r from-red-900/40 to-zinc-900 border border-red-500/50 py-3 px-6 rounded-xl font-medium inline-block shadow-lg"
             >
                 모든 수료생 한국국방기술학회 이사장 명의 <br /> 채용 추천서 제공

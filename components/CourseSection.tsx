@@ -98,7 +98,7 @@ export const CourseSection: React.FC = () => {
                     수강생들이 직접만든 최종프로젝트
                   </p>
                   <img 
-                    src="https://postfiles.pstatic.net/MjAyNjA2MTVfMjgz/MDAxNzgxNTAxMjYxMTg3.8NEIBDph6QLrA_sYWRdvapg5qXvrjmNbp-_FgMC_JOIg.O-0jMK1KtZUm4kb3ZWXQHoWRGABg5f14k0aZxPHU5uAg.JPEG/20260615_142533.jpg?type=w966"
+                    src="https://postfiles.pstatic.net/MjAyNjA2MTVfMTMx/MDAxNzgxNTE1OTEwMDc0.4zn6UwXRH0gsdeBfFJi8YtrKDw5bRzFK1fS1mh2yHgog.9q07sfqs5XMFbqJ523qvlbiNfEI0Uwg-6o_klrnx3ykg.PNG/20260615_142533.png?type=w966"
                     alt="현대로템 관련 이미지 1"
                     referrerPolicy="no-referrer"
                     className="w-full max-w-[966px] mx-auto mb-8 rounded-2xl shadow-xl"

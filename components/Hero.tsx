@@ -19,10 +19,10 @@ export const Hero: React.FC = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-20">
       
       {/* Background Layers (z-0) */}
-      <div className="absolute inset-0 z-0 bg-black pointer-events-none">
+      <div className="absolute inset-0 z-0 bg-slate-950 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#1a1a1a_0%,#000000_100%)]" />
         
         {/* Minimal Overlay for text readability */}

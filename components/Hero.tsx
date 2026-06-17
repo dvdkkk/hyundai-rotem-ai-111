@@ -60,7 +60,7 @@ export const Hero: React.FC = () => {
             className="inline-flex items-center px-6 py-3 rounded-full bg-red-900/10 border border-red-500/20 shadow-[0_0_20px_rgba(185,28,28,0.1)]"
           >
             <span className="text-white text-sm md:text-md font-medium text-center">
-              본 과정은 현대로템이 주관하는 K-디지털 트레이닝 디지털 선도기업 아카데미입니다.
+              본 과정은 현대로템이 주관하는 K-디지털 트레이닝 디지털 선도기업 아카데미입니다.<br/>고용노동부와 한국전파진흥협회가 운영지원하는 프로그램입니다.
             </span>
           </motion.div>
         </div>
@@ -83,7 +83,7 @@ export const Hero: React.FC = () => {
               <div className="flex items-center gap-3">
                 <Cpu className="text-red-600 hidden md:block" size={32} />
                 <h2 id="course-title" className="text-2xl md:text-4xl font-black text-white tracking-tighter">
-                  현대로템 K-방산 SMART AI모델 개발과정
+                  현대로템 K-방산 <br /> SMART AI모델 개발과정
                 </h2>
               </div>
             </div>

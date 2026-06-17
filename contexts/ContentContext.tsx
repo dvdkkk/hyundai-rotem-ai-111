@@ -20,8 +20,8 @@ const defaultContent: SiteContent = {
   },
   intro: {
     badge: "VISSON",
-    title1: "왜? 현대로템 K-방산 SMART AI모델 개발 기술을",
-    highlight: "배워야 할까?",
+    title1: "왜? 현대로템 K-방산 SMART AI모델 개발",
+    highlight: "기술을 배워야 할까?",
     title2: "",
     description: "100% 오프라인 수업!",
 

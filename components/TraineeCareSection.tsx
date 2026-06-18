@@ -28,7 +28,7 @@ export function TraineeCareSection() {
             위한 아카데미 훈련생 <br />
             집중케어!</span>
           </h2>
-          <p className="text-zinc-400 text-lg">최고의 교육 환경과 밀착 케어로 성공적인 취업을 지원합니다.</p>
+          <p className="text-white mt-6 text-sm md:text-base bg-gradient-to-r from-red-900/40 to-zinc-900 border border-red-500/50 py-3 px-6 rounded-xl font-medium inline-block shadow-lg">최고의 교육 환경과 밀착 케어로 성공적인 취업을 지원합니다.</p>
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
